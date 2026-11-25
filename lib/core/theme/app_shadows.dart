@@ -37,5 +37,30 @@ abstract final class AppShadows {
   static List<BoxShadow> focusGlow(Color glowColor) => [
     BoxShadow(color: glowColor, blurRadius: 0, spreadRadius: 3),
   ];
-}
 
+  /// Tactile 3D button bottom lip shadow matching Stitch interactive buttons.
+  static List<BoxShadow> tactileLip(
+    Color lipColor, {
+    double offsetY = 4.0,
+    Color? ambientColor,
+    double ambientBlur = 16.0,
+  }) => [
+    BoxShadow(color: lipColor, blurRadius: 0, offset: Offset(0, offsetY)),
+    if (ambientColor != null)
+      BoxShadow(
+        color: ambientColor.withValues(alpha: 0.16),
+        blurRadius: ambientBlur,
+        offset: const Offset(0, 8),
+      ),
+  ];
+
+  /// Soft elevated card shadow for Stitch cards.
+  static List<BoxShadow> softCard(Color shadowColor) => [
+    BoxShadow(
+      color: shadowColor.withValues(alpha: 0.08),
+      blurRadius: 24,
+      spreadRadius: -4,
+      offset: const Offset(0, 8),
+    ),
+  ];
+}

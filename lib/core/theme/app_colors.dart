@@ -63,6 +63,21 @@ class AppColors extends ThemeExtension<AppColors> {
     required this.borderHairline,
     required this.rowHover,
     required this.shadowAmbient,
+    required this.ceruleanPrimary,
+    required this.ceruleanContainer,
+    required this.ceruleanFixed,
+    required this.ceruleanFixedDim,
+    required this.onCeruleanFixed,
+    required this.pastelBlueSurface,
+    required this.pastelBlueBorder,
+    required this.cardSoftBlue,
+    required this.cardSoftBorder,
+    required this.skyBadgeBg,
+    required this.skyBadgeText,
+    required this.lockedSurface,
+    required this.lockedBorder,
+    required this.lockedIcon,
+    required this.steppingStoneShadow,
   });
 
   final Color surface;
@@ -127,6 +142,23 @@ class AppColors extends ThemeExtension<AppColors> {
   final Color rowHover;
   final Color shadowAmbient;
 
+  // Stitch screen palette tokens (Cerulean & Pastel Blue spectrum)
+  final Color ceruleanPrimary;
+  final Color ceruleanContainer;
+  final Color ceruleanFixed;
+  final Color ceruleanFixedDim;
+  final Color onCeruleanFixed;
+  final Color pastelBlueSurface;
+  final Color pastelBlueBorder;
+  final Color cardSoftBlue;
+  final Color cardSoftBorder;
+  final Color skyBadgeBg;
+  final Color skyBadgeText;
+  final Color lockedSurface;
+  final Color lockedBorder;
+  final Color lockedIcon;
+  final Color steppingStoneShadow;
+
   static const AppColors light = AppColors(
     surface: Color(0xFFF6FAFE),
     surfaceDim: Color(0xFFD6DADE),
@@ -187,6 +219,21 @@ class AppColors extends ThemeExtension<AppColors> {
     borderHairline: Color(0xFFE2E8F0),
     rowHover: Color(0xFFF8FAFC),
     shadowAmbient: Color(0xFF0F294A),
+    ceruleanPrimary: Color(0xFF006492),
+    ceruleanContainer: Color(0xFF099CDF),
+    ceruleanFixed: Color(0xFFC9E6FF),
+    ceruleanFixedDim: Color(0xFF8BCEFF),
+    onCeruleanFixed: Color(0xFF001E2F),
+    pastelBlueSurface: Color(0xFFE8F1FD),
+    pastelBlueBorder: Color(0xFFBFDBFE),
+    cardSoftBlue: Color(0xFFF4F8FC),
+    cardSoftBorder: Color(0xFFDCE8F8),
+    skyBadgeBg: Color(0xFFE0F2FE),
+    skyBadgeText: Color(0xFF0369A1),
+    lockedSurface: Color(0xFFF8FAFC),
+    lockedBorder: Color(0xFFCBD5E1),
+    lockedIcon: Color(0xFF64748B),
+    steppingStoneShadow: Color(0xFFCFDAF2),
   );
 
   static const AppColors dark = AppColors(
@@ -249,6 +296,21 @@ class AppColors extends ThemeExtension<AppColors> {
     borderHairline: Color(0xFF1E3C64),
     rowHover: Color(0xFF153156),
     shadowAmbient: Color(0xFF000A18),
+    ceruleanPrimary: Color(0xFF8BCEFF),
+    ceruleanContainer: Color(0xFF099CDF),
+    ceruleanFixed: Color(0xFF004B6F),
+    ceruleanFixedDim: Color(0xFF006492),
+    onCeruleanFixed: Color(0xFFC9E6FF),
+    pastelBlueSurface: Color(0xFF153156),
+    pastelBlueBorder: Color(0xFF30476A),
+    cardSoftBlue: Color(0xFF0F294A),
+    cardSoftBorder: Color(0xFF1E3C64),
+    skyBadgeBg: Color(0xFF004B6F),
+    skyBadgeText: Color(0xFF8BCEFF),
+    lockedSurface: Color(0xFF153156),
+    lockedBorder: Color(0xFF30476A),
+    lockedIcon: Color(0xFF7C90A8),
+    steppingStoneShadow: Color(0xFF060E16),
   );
 
   @override
@@ -312,6 +374,21 @@ class AppColors extends ThemeExtension<AppColors> {
     Color? borderHairline,
     Color? rowHover,
     Color? shadowAmbient,
+    Color? ceruleanPrimary,
+    Color? ceruleanContainer,
+    Color? ceruleanFixed,
+    Color? ceruleanFixedDim,
+    Color? onCeruleanFixed,
+    Color? pastelBlueSurface,
+    Color? pastelBlueBorder,
+    Color? cardSoftBlue,
+    Color? cardSoftBorder,
+    Color? skyBadgeBg,
+    Color? skyBadgeText,
+    Color? lockedSurface,
+    Color? lockedBorder,
+    Color? lockedIcon,
+    Color? steppingStoneShadow,
   }) {
     return AppColors(
       surface: surface ?? this.surface,
@@ -378,6 +455,21 @@ class AppColors extends ThemeExtension<AppColors> {
       borderHairline: borderHairline ?? this.borderHairline,
       rowHover: rowHover ?? this.rowHover,
       shadowAmbient: shadowAmbient ?? this.shadowAmbient,
+      ceruleanPrimary: ceruleanPrimary ?? this.ceruleanPrimary,
+      ceruleanContainer: ceruleanContainer ?? this.ceruleanContainer,
+      ceruleanFixed: ceruleanFixed ?? this.ceruleanFixed,
+      ceruleanFixedDim: ceruleanFixedDim ?? this.ceruleanFixedDim,
+      onCeruleanFixed: onCeruleanFixed ?? this.onCeruleanFixed,
+      pastelBlueSurface: pastelBlueSurface ?? this.pastelBlueSurface,
+      pastelBlueBorder: pastelBlueBorder ?? this.pastelBlueBorder,
+      cardSoftBlue: cardSoftBlue ?? this.cardSoftBlue,
+      cardSoftBorder: cardSoftBorder ?? this.cardSoftBorder,
+      skyBadgeBg: skyBadgeBg ?? this.skyBadgeBg,
+      skyBadgeText: skyBadgeText ?? this.skyBadgeText,
+      lockedSurface: lockedSurface ?? this.lockedSurface,
+      lockedBorder: lockedBorder ?? this.lockedBorder,
+      lockedIcon: lockedIcon ?? this.lockedIcon,
+      steppingStoneShadow: steppingStoneShadow ?? this.steppingStoneShadow,
     );
   }
 
@@ -528,7 +620,41 @@ class AppColors extends ThemeExtension<AppColors> {
       borderHairline: Color.lerp(borderHairline, other.borderHairline, t)!,
       rowHover: Color.lerp(rowHover, other.rowHover, t)!,
       shadowAmbient: Color.lerp(shadowAmbient, other.shadowAmbient, t)!,
+      ceruleanPrimary: Color.lerp(ceruleanPrimary, other.ceruleanPrimary, t)!,
+      ceruleanContainer: Color.lerp(
+        ceruleanContainer,
+        other.ceruleanContainer,
+        t,
+      )!,
+      ceruleanFixed: Color.lerp(ceruleanFixed, other.ceruleanFixed, t)!,
+      ceruleanFixedDim: Color.lerp(
+        ceruleanFixedDim,
+        other.ceruleanFixedDim,
+        t,
+      )!,
+      onCeruleanFixed: Color.lerp(onCeruleanFixed, other.onCeruleanFixed, t)!,
+      pastelBlueSurface: Color.lerp(
+        pastelBlueSurface,
+        other.pastelBlueSurface,
+        t,
+      )!,
+      pastelBlueBorder: Color.lerp(
+        pastelBlueBorder,
+        other.pastelBlueBorder,
+        t,
+      )!,
+      cardSoftBlue: Color.lerp(cardSoftBlue, other.cardSoftBlue, t)!,
+      cardSoftBorder: Color.lerp(cardSoftBorder, other.cardSoftBorder, t)!,
+      skyBadgeBg: Color.lerp(skyBadgeBg, other.skyBadgeBg, t)!,
+      skyBadgeText: Color.lerp(skyBadgeText, other.skyBadgeText, t)!,
+      lockedSurface: Color.lerp(lockedSurface, other.lockedSurface, t)!,
+      lockedBorder: Color.lerp(lockedBorder, other.lockedBorder, t)!,
+      lockedIcon: Color.lerp(lockedIcon, other.lockedIcon, t)!,
+      steppingStoneShadow: Color.lerp(
+        steppingStoneShadow,
+        other.steppingStoneShadow,
+        t,
+      )!,
     );
   }
 }
-
