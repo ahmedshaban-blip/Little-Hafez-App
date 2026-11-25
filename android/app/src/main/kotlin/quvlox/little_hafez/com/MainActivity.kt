@@ -1,4 +1,4 @@
-package com.example.litle_hafez
+package quvlox.little_hafez.com
 
 import io.flutter.embedding.android.FlutterActivity
 
