@@ -13,7 +13,6 @@ To build a signed release APK or App Bundle in GitHub Actions, add these **4 Rep
 ---
 
 ## 🔑 Step 2: Add the 4 Required Secrets
-
 ### 1. `KEYSTORE_BASE64`
 The full binary content of your `.jks` or `.keystore` file encoded as a Base64 string.
 
