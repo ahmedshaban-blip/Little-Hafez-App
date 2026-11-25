@@ -27,4 +27,3 @@ abstract final class AppSpacing {
   static const EdgeInsetsDirectional pageMobile =
       EdgeInsetsDirectional.symmetric(horizontal: marginMobile, vertical: md);
 }
-
