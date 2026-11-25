@@ -20,4 +20,3 @@ abstract final class AppRadii {
     Radius.circular(full),
   );
 }
-

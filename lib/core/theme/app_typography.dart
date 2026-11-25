@@ -100,6 +100,27 @@ abstract final class AppTypography {
     letterSpacing: 0.33,
   );
 
+  static const TextStyle quranAyahLg = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 34.0,
+    fontWeight: FontWeight.w600,
+    height: 2.0,
+  );
+
+  static const TextStyle quranAyahMd = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 26.0,
+    fontWeight: FontWeight.w500,
+    height: 2.0,
+  );
+
+  static const TextStyle headlineXlMobile = TextStyle(
+    fontFamily: fontFamily,
+    fontSize: 28.0,
+    fontWeight: FontWeight.w800,
+    height: 36.0 / 28.0,
+  );
+
   /// Builds a Material 3 [TextTheme] bound to the provided text colors.
   static TextTheme toTextTheme({
     required Color primaryTextColor,
@@ -126,4 +147,3 @@ abstract final class AppTypography {
     );
   }
 }
-

@@ -11,4 +11,3 @@ extension AppThemeContext on BuildContext {
 
   ColorScheme get colorScheme => Theme.of(this).colorScheme;
 }
-
