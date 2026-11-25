@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "icon": {
+    "mode": "packages",
+    "applyAndroid": true,
+    "applyIos": false,
+    "backgroundMode": "image",
+    "backgroundColorHex": "#FFFFFF",
+    "gradientStops": [
+      {
+        "color": "#4C6EF5",
+        "position": 0
+      },
+      {
+        "color": "#F76707",
+        "position": 100
+      }
+    ],
+    "gradientAngle": 180,
+    "foregroundImagePath": ".air-flutter/icon-splash/icon-foreground.png",
+    "backgroundImagePath": ".air-flutter/icon-splash/icon-background.png",
+    "config": {
+      "adaptive_icon_foreground_inset": 0,
+      "adaptive_icon_foreground": "assets/air_flutter_icon/icon_android_fg.png",
+      "image_path_android": "assets/air_flutter_icon/icon_android_fg.png",
+      "image_path_ios": "assets/air_flutter_icon/icon_ios.png",
+      "macos": {
+        "image_path": "assets/air_flutter_icon/icon_macos.png"
+      },
+      "windows": {
+        "image_path": "assets/air_flutter_icon/icon_windows.png"
+      },
+      "web": {
+        "image_path": "assets/air_flutter_icon/icon_web.png"
+      }
+    },
+    "configTarget": "file",
+    "generatedAt": "2026-11-25T10:17:15.772Z"
+  },
+  "splash": {
+    "backgroundColorHex": "#B5D3CF",
+    "fullscreen": true,
+    "useAppIcon": true,
+    "splashScale": 100,
+    "splashCornerMode": "original",
+    "splashUniformRadius": 50,
+    "splashCornerRadii": {
+      "topLeft": 16,
+      "topRight": 16,
+      "bottomRight": 16,
+      "bottomLeft": 16
+    },
+    "backgroundFit": "cover",
+    "config": {
+      "android": true,
+      "ios": true,
+      "image": "assets/air_flutter_icon/splash_legacy_ios.png",
+      "image_android": "assets/air_flutter_icon/splash_legacy_ios.png",
+      "image_ios": "assets/air_flutter_icon/splash_legacy_ios.png",
+      "android_12": {
+        "image": "assets/air_flutter_icon/splash_android12.png"
+      }
+    },
+    "configTarget": "file",
+    "backgroundImagePath": ".air-flutter/icon-splash/splash-background.png",
+    "generatedAt": "2026-11-25T10:18:05.029Z"
+  }
+}

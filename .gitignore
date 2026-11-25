@@ -49,3 +49,5 @@ app.*.map.json
 stitch_screens
 .agents
 DESIGN.md
+.air-flutter/backups/
+.air-flutter/icon-splash/

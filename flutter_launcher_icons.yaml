@@ -1,0 +1,14 @@
+flutter_launcher_icons:
+  image_path: "assets/air_flutter_icon/android_legacy.png"
+  image_path_android: "assets/air_flutter_icon/android_legacy.png"
+  image_path_ios: "assets/air_flutter_icon/icon_ios.png"
+  adaptive_icon_background: "assets/air_flutter_icon/android_background.png"
+  adaptive_icon_foreground: "assets/air_flutter_icon/android_foreground.png"
+  adaptive_icon_foreground_inset: 0
+  adaptive_icon_monochrome: "assets/air_flutter_icon/android_monochrome.png"
+  web:
+    image_path: "assets/air_flutter_icon/icon_web.png"
+  windows:
+    image_path: "assets/air_flutter_icon/icon_windows.png"
+  macos:
+    image_path: "assets/air_flutter_icon/icon_macos.png"
