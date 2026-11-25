@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.example.litle_hafez"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = System.getenv("CI_NDK_VERSION") ?: flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
